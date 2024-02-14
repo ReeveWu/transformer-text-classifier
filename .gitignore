@@ -2,4 +2,5 @@
 log/
 model/*
 vectors/*
+flagged
 !vectors/bge-base-en-v1.5
