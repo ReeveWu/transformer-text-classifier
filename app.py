@@ -2,8 +2,12 @@ import gradio as gr
 from load_model import predict
 
 def run(text):
-    output = str(round(predict(text), 1))
-    return output
+    output = str(round(predict(text), 0))
+    if output > 3:
+        return "POSITIVE"
+    elif output < 3:
+        return "NEGATIVE"
+    return "NEUTRAL"
 
 with gr.Blocks() as demo:
     gr.Markdown("Enter the sentence you want to analyze.")
