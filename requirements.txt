@@ -1,0 +1,9 @@
+numpy
+seaborn
+matplotlib
+pandas
+kaggle
+torch
+transformers
+tensorflow
+gradio
